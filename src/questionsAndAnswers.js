@@ -1,4 +1,5 @@
 import { SIGNS } from "./constants.js";
+import { GCD } from "./gcd.js";
 import { getRandomDigit, getRandomSign } from "./random.js";
 
 export const getQAndAEven = () => {
@@ -26,4 +27,13 @@ export const getQAndACalc = () => {
             break;
     }
     return [question, String(rightAnswer)]
+}
+
+
+export const getQAndAGcd = () => {
+    const firstDigit = getRandomDigit(100);
+    const secondDigit = getRandomDigit(100);
+    const question = firstDigit + " " + secondDigit;
+    let answer = GCD(firstDigit, secondDigit);
+    return [question, String(answer)]
 }
