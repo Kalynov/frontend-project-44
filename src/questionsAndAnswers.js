@@ -1,5 +1,6 @@
-import { SIGNS } from "./constants.js";
+import { PROGRESSION_LENGTH, SIGNS } from "./constants.js";
 import { GCD } from "./gcd.js";
+import { getProgression } from "./progression.js";
 import { getRandomDigit, getRandomSign } from "./random.js";
 
 export const getQAndAEven = () => {
@@ -35,5 +36,13 @@ export const getQAndAGcd = () => {
     const secondDigit = getRandomDigit(100);
     const question = firstDigit + " " + secondDigit;
     let answer = GCD(firstDigit, secondDigit);
+    return [question, String(answer)]
+}
+
+export const getQAndAProgression = () => {
+    let progression = getProgression(PROGRESSION_LENGTH);
+    let hidenIndex = getRandomDigit(PROGRESSION_LENGTH);
+    const question = progression.map(el => el === progression[hidenIndex] ? ".." : el).join(" ");
+    const answer = progression[hidenIndex];
     return [question, String(answer)]
 }
