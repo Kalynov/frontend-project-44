@@ -41,8 +41,8 @@ export const getQAndAGcd = () => {
 
 export const getQAndAProgression = () => {
     let progression = getProgression(PROGRESSION_LENGTH);
-    let hidenIndex = getRandomDigit(PROGRESSION_LENGTH);
-    const question = progression.map(el => el === progression[hidenIndex] ? ".." : el).join(" ");
+    let hidenIndex = getRandomDigit(PROGRESSION_LENGTH); 
+    const question = progression.map((el, i) => i === hidenIndex ? ".." : el).join(" ");
     const answer = progression[hidenIndex];
     return [question, String(answer)]
 }

@@ -4,6 +4,6 @@ import { mainGame } from '../src/mainGame.js';
 import { getQAndAProgression } from '../src/questionsAndAnswers.js';
 
 const name = cli()
-console.log('Find the greatest common divisor of given numbers.');
+console.log('What number is missing in the progression?');
 
 mainGame(name, getQAndAProgression);
