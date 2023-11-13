@@ -1,4 +1,4 @@
-import { PROGRESSION_LENGTH, SIGNS } from "./constants.js";
+import { PRIME_NUMBERS, PROGRESSION_LENGTH, SIGNS } from "./constants.js";
 import { GCD } from "./gcd.js";
 import { getProgression } from "./progression.js";
 import { getRandomDigit, getRandomSign } from "./random.js";
@@ -45,4 +45,11 @@ export const getQAndAProgression = () => {
     const question = progression.map((el, i) => i === hidenIndex ? ".." : el).join(" ");
     const answer = progression[hidenIndex];
     return [question, String(answer)]
+}
+
+
+export const getQAndAPrime = () => {
+    let question = getRandomDigit(1000);
+    let answer = PRIME_NUMBERS.includes(question) ? "yes" : "no";
+    return [question, answer]
 }
