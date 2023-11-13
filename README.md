@@ -21,3 +21,8 @@
 
 ### Game - Brain-progression
 [![asciicast](https://asciinema.org/a/XZfnJVJonL0eoMo6AMYDRpIyP.svg)](https://asciinema.org/a/XZfnJVJonL0eoMo6AMYDRpIyP)
+
+
+
+### Game - Brain-prime
+[![asciicast](https://asciinema.org/a/dnQ2YhStL9Le9qwhbMmBJL1tg.svg)](https://asciinema.org/a/dnQ2YhStL9Le9qwhbMmBJL1tg)
