@@ -3,7 +3,11 @@ function GCD(firstNumber, secondNumber) { // НОД двух целых чисе
   let b = secondNumber;
   for (let i = 1; i < 2; i += 1) {
     while (gcd && b) {
-      gcd = gcd > b ? gcd %= b : b %= gcd;
+      if (gcd > b) {
+        gcd %= b;
+      } else {
+        b %= gcd;
+      }
     }
     gcd += b;
   }
