@@ -1,6 +1,6 @@
 import { PRIME_NUMBERS, PROGRESSION_LENGTH, SIGNS } from "./constants.js";
-import { GCD } from "./gcd.js";
-import { getProgression } from "./progression.js";
+import { GCD } from "./games/gcd.js";
+import { getProgression } from "./games/progression.js";
 import { getRandomDigit, getRandomSign } from "./random.js";
 
 export const getQAndAEven = () => {

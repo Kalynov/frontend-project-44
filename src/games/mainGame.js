@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { WINCOUNT } from './constants.js';
+import { WINCOUNT } from '../constants.js';
 
 
 export const mainGame = (name, getQAndA) => {

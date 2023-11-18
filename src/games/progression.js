@@ -1,4 +1,4 @@
-import { getRandomDigit } from "./random.js"
+import { getRandomDigit } from "../random.js"
 
 export const getProgression = (length) => {
     const firstNumber = getRandomDigit(100);
