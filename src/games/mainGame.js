@@ -15,14 +15,18 @@ export const mainGame = (name, getQAndA) => {
             counter = 0;
             console.log("'" + usersAnswer + "' is wrong answer ;(. Correct answer was '" + rightAnswer + "'.");
             console.log("Let's try again, " + name);
+            break
         } else {
             console.log("Correct!");
             counter++
         }
         
     } while (counter < WINCOUNT);
+
+    if (counter === WINCOUNT) {
+        console.log("Congratulations, " + name + "!");
+    }
     
-    console.log("Congratulations, " + name + "!");
 }
 
 
