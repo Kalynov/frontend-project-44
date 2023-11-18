@@ -14,7 +14,7 @@ export const mainGame = (name, getQAndA) => {
         if (usersAnswer !== rightAnswer){
             counter = 0;
             console.log("'" + usersAnswer + "' is wrong answer ;(. Correct answer was '" + rightAnswer + "'.");
-            console.log("Let's try again, " + name);
+            console.log("Let's try again, " + name + "!");
             break
         } else {
             console.log("Correct!");
