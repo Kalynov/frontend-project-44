@@ -1,11 +1,11 @@
 
-export function GCD (a, b) { // НОД двух целых чисел
-	let x = a;
+export function GCD (firstNumber, secondNumber) { // НОД двух целых чисел
+	let gcd = firstNumber;
 	for (let i = 1; i < 2; i++) {
-		while (x && b) {
-		  x > b ? x %= b : b %= x;
+		while (gcd && secondNumber) {
+			gcd > secondNumber ? gcd %= secondNumber : secondNumber %= gcd;
 		}
-		x += b;
+		gcd += secondNumber;
 	  }
-	  return x;
+	  return gcd;
 }
