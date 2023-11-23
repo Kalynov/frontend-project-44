@@ -7,8 +7,11 @@ const runMainGame = (getQAndA, firstQuestion) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(firstQuestion);
+  if (typeof getQAndA !== 'function') {
+    return;
+  }
 
+  console.log(firstQuestion);
   do {
     const [question, rightAnswer] = getQAndA();
     console.log(`Question: ${question}`);
