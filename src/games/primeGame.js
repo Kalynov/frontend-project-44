@@ -9,7 +9,7 @@ const getQAndAPrime = () => {
 };
 
 const runPrimeGame = () => {
-  const firstQuestion = 'Answer "yes" if the number is prime, otherwise answer "no"';
+  const firstQuestion = 'Answer "yes" if the number is prime. Otherwise answer "no"';
   runMainGame(getQAndAPrime, firstQuestion);
 };
 
