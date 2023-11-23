@@ -1,9 +1,4 @@
 #!/usr/bin/env node
-import cli from '../src/cli.js';
-import mainGame from '../src/games/mainGame.js';
-import { getQAndACalc } from '../src/questionsAndAnswers.js';
+import runCalcGame from '../src/games/calcGame.js';
 
-const name = cli();
-console.log('What is the result of the expression?');
-
-mainGame(name, getQAndACalc);
+runCalcGame();

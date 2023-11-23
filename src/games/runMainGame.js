@@ -1,8 +1,13 @@
 import readlineSync from 'readline-sync';
 import { WINCOUNT } from '../constants.js';
 
-const mainGame = (name, getQAndA) => {
+const runMainGame = (getQAndA, firstQuestion) => {
   let counter = 0;
+
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(firstQuestion);
 
   do {
     const [question, rightAnswer] = getQAndA();
@@ -25,4 +30,4 @@ const mainGame = (name, getQAndA) => {
   }
 };
 
-export default mainGame;
+export default runMainGame;
